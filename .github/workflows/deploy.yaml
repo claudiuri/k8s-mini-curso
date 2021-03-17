@@ -56,7 +56,7 @@ jobs:
           uses: matootie/dokube@v1.3.2
           with:
             personalAccessToken: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
-            clusterName: live-k8s
+            clusterName: teste-k8s
 
         - name: Set deployment image
           run: kubectl set image deployment api-heroes api-heroes=claudiuri/nodejs-with-postgress-api-example:${{ steps.tagging.outputs.new_version }}
