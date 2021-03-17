@@ -48,7 +48,7 @@ const failAction = async (request, h, err) => {
       plugin: HapiSwagger,
       options: {
         info: {
-          title: "Node.js with Postgres Example - Erick Wendel",
+          title: "Node.js with Postgres Example - Cláudio Yuri",
           version: "1.0",
         },
       }
