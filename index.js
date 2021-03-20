@@ -39,7 +39,7 @@ const failAction = async (request, h, err) => {
     power: Sequelize.STRING,
   });
 
-  await Hero.sync({ force: true });
+  await Hero.sync();
 
   await server.register([
     Inert,
