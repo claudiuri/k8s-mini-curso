@@ -1,0 +1,20 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: create-heroe
+spec:
+  schedule: "2 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: create-heroe
+            image: byrnedo/alpine-curl:0.1.3
+            imagePullPolicy: IfNotPresent
+            command:
+            - "/bin/sh"
+            - "-ec"
+            - |
+             curl --silent -X POST --header "Content-Type: application/json" --data-binary '{"name":"Cláudio","power":"coder"}' http://164.90.252.175:3000/heroes
+          restartPolicy: OnFailure
