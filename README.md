@@ -1,4 +1,4 @@
-## Node.js with Postgres Example
+## Node.js with Postgres Example [![Deploy](https://github.com/claudiuri/k8s-mini-curso/actions/workflows/deploy.yaml/badge.svg?branch=main)](https://github.com/claudiuri/k8s-mini-curso/actions/workflows/deploy.yaml)
 
 <img
     src="https://i.imgur.com/jUeBAiH.png"
